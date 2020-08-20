@@ -21,6 +21,7 @@ public:
     }
 };
 
+//SingleLinkedList class
 class SinglyLinkedList
 {
 public:
@@ -225,20 +226,21 @@ void SinglyLinkedList ::search()
     while(ptr!=NULL)
     {
         count++;
-        if(ptr->data=n)
+        if(ptr->data==n)
         {
             flag=1;
             break;
         }
-        if(flag=1)
+        ptr = ptr->next;   
+    }
+    if(flag==1)
         {
-            cout<<n<<" is found at location"<<count<<endl;
+            cout<<n<<" is found at location "<<count<<endl;
         }
-        else
+    else
         {
             cout<<"Data is not found!\n";
         }
-    }
 
 }
 
@@ -253,7 +255,7 @@ void SinglyLinkedList ::reverse()
         temp=ptr;
         ptr=ptr->next;
         temp->next=head;
-        temp=head;
+        head=temp;
     }
     cout << "\nReversed!" << endl;
 	display();
