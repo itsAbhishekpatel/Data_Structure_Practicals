@@ -104,7 +104,7 @@ void SinglyLinkedList::insert_at_end()
     temp->next = NULL;
     tail->next = temp;
     tail = temp;
-    cout << "Inserted!" << endl;
+    cout << "Node Inserted" << endl;
 }
 
 //prepend Node(insert node at begin)
@@ -115,7 +115,7 @@ void SinglyLinkedList :: insert_at_begin()
     cin>>temp->data;
     temp->next=head;
     head=temp;
-    cout << "Inserted!" << endl;
+    cout << "Node Inserted" << endl;
 }
 
 //insert_at_any location in node
@@ -132,6 +132,8 @@ void SinglyLinkedList :: insert_at_loc()
    {
        ptr=ptr->next;
    }
+   ptr->next=temp;
+   cout << "Node Inserted" << endl;
 }
 //Delete a Node at_begin in list
 void SinglyLinkedList :: delete_at_begin()
@@ -333,3 +335,4 @@ int main(void)
     return 0;
 }
 //By Abhishek Patel
+// 19/78106
