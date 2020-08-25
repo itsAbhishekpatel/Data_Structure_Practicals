@@ -19,7 +19,7 @@ public:
     
 };
 
-//DoubleLinkedList Class
+//circularLinkedList Class
 class CircularSLL
 {
     public:
