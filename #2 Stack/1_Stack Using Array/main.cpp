@@ -147,7 +147,7 @@ int main()
             break;
 
         case 2:
-            cout << "Pop function called - Pop value:" << s1.pop() << endl;
+            cout << "Pop a value from the stack:" << s1.pop() << endl;
             break;
 
         case 3:
@@ -171,15 +171,14 @@ int main()
         case 5:
             cout << "Enter the position to peek the value:";
             cin >> position;
-            cout << "Peek function called-value at position :" << s1.peek(position);
+            cout << "The value is :" << s1.peek(position);
             break;
 
         case 6:
-            cout << "count function called .Number of items in the stack is:" << s1.count() << endl;
+            cout << "Number of items in the stack is: " << s1.count() << endl;
             break;
 
         case 7:
-            cout << "Change function called-" << endl;
             cout << "Enter the position to change the value:";
             cin >> position;
             cout << "Enter the value:";
@@ -189,7 +188,7 @@ int main()
             break;
 
         case 8:
-            cout << "Display functon called-" << endl;
+            cout << "Values in stack" << endl;
             s1.Display();
             break;
 
